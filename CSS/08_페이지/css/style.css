@@ -13,39 +13,40 @@ header { height: 100px; border-bottom: 1px solid #ddd;}
     
 }
 
-/* ///////////////////section1 */
 section {
     min-height: var(--sec-min-height);
 }
+/* ///////////////////section1 */
 section#main {
-    background: url(../img/메인\ section.png);
+    background: url(../img/main.png);
 }
 section#main .title {
     color: var(--accent-color);
     font-weight: bold;
 }
-section .container {
+section#main .container {
     position: relative;
-
 }
-section .title{
+section#main .title {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-img#main-1{
+img#main-1 {
     width: 230px; height: 230px;
     transform: rotate(25deg);
 }
-img#main-2{
+img#main-2 {
     width: 230px; height: 230px;
     transform: rotate(-25deg);
 }
-img#main-3{
-    width: 380px;height: 380px;
+img#main-3 {
+    width: 380px; height: 380px;
     transform: rotate(-5deg);
 }
-img#main-4{width: 380px; height: 380px;}
-/* --------------------------section1 */
+img#main-4 {
+    width: 330px; height: 330px;
+}
+/* ############### 섹션1 ############### */
 
