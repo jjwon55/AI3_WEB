@@ -1,20 +1,22 @@
-document.addEventListener("DOMContentLoaded", (e) => {
+$(function() {      
+    const menu = $('.menu')
+    const sub = $('.sub .inner')
 
-    const main = document.querySelector(".main")
-    const sub = document.querySelector(".sub")
+    // menu.on('mouseover', function() {
+    //     sub.stop().fadeIn()
+    // })
+    // menu.on('mouseout', function() {
+    //     sub.stop().fadeOut()
+    // })
 
-    //메인메뉴- 마우스 이벤트
-    main.addEventListener("mouseover", () => {
-        sub.classList.add("active")
-    })
-    main.addEventListener("mouseout", () => {
-        sub.classList.remove("active")
-    })
-    //서브메뉴 - 마우스 이벤트
-    sub.addEventListener("mouseover", () => {
-        sub.classList.add("active")
-    })
-    sub.addEventListener("mouseout", () => {
-        sub.classList.remove("active")
-    })
+    menu.hover(
+        function() {
+            sub.stop().fadeIn()
+        },
+        function() {
+            sub.stop().fadeOut()
+        },
+    )
 })
+
+

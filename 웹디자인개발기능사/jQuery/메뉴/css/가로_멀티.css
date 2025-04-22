@@ -1,6 +1,6 @@
 * {margin: 0; padding: 0; box-sizing: border-box;}
-.conatiner {
-    width: 100px;
+.container {
+    width: 1200px;
     margin: 0 auto;
     border: 3px dashed orange;
 }
@@ -36,15 +36,9 @@ a {text-decoration: none; color: black;}
 }
 
 .submenu {
-    max-height: 0;
-    opacity: 0;
-    transition: all 0.5s;
+    display: none;
     overflow: hidden;
     position: absolute;
     top: 100%;
     left: -1px;
-}
-.submenu.active {
-    max-height: 200px;
-    opacity: 1;
 }

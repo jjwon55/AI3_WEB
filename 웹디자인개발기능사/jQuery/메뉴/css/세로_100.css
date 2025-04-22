@@ -45,7 +45,6 @@ header {
 
 .sub .inner {
     width: 100%;
-    /* display: flex; */
     display: none;
     flex-wrap: wrap;
     justify-content: start;
@@ -53,11 +52,9 @@ header {
     background-color: lightgray;
     padding: 0 40px;
     transition: all 0.5s;
-    /* opacity: 0; */
 }
 .sub.active .inner {
     display: flex;
-    /* opacity: 1; */
 }
 
 .sub .sub-menu {
