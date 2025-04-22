@@ -3,15 +3,15 @@ $(function() {
     const time = 3000
     const $slide = $('.slide')
     const $container = $('.slide-container')
-    const size = $slide.width()
+    const size = $slide.height()
     const count = $slide.length
-    $container.width(size * count)
+    $container.height(size * count)
 
     setInterval(function() {
         $container.animate({
-            left: -size
+            top: -size
         }, speed, function() {
-            $container.css('left', '0')    
+            $container.css('top', '0')    
             $container.append($('.slide').first())   
         })
     }, time)
